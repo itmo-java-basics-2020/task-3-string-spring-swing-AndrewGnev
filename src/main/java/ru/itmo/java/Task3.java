@@ -41,20 +41,16 @@ public class Task3 {
 
                 if(inputArray[i] > max1){
                     if(inputArray[i] >= max2){
-                        max1 = inputArray[i];
-                        max2 = max1 + max2;//
-                        max1 = max2 - max1;// swap
-                        max2 = max2 - max1;//
+                        max1 = max2;
+                        max2 = inputArray[i];
                     }
                     else max1 = inputArray[i];
                 }
 
                 if(inputArray[i] < min1){
                     if(inputArray[i] <= min2){
-                        min1 = inputArray[i];
-                        min2 = min1 + min2;//
-                        min1 = min2 - min1;// swap
-                        min2 = min2 - min1;//
+                        min1 = min2;
+                        min2 = inputArray[i];
                     }
                     else min1 = inputArray[i];
                 }
